@@ -2,7 +2,7 @@
 #mongo="mongodb://127.0.0.1:27017/osmos_dev"
 mongo="mongodb+srv://wildducktest:password1234@wildduck-east.yq59l.mongodb.net/?retryWrites=true&w=majority"
 # redis connection string to connect to a single master (see below for Sentinel example)
-#redis="redis://127.0.0.1:6379/3"
+redis="redis://:pb4407158684fdc551f6a9b231edf9508a68bcee609383b0e3a20c3bb9a0f9b05@ec2-3-209-0-252.compute-1.amazonaws.com:32049"
 
 # WildDuck allows using different kind of data in different databases
 # If you do not provide a database config value, then main database connection
@@ -26,10 +26,7 @@ sender="zone-mta"
 
 #queued="mail"
 
-[redis]
-host="127.0.0.1"
-port=6379
-db=3
+
 
 ## Connect to Redis Sentinel instead of single master
 # [redis]
